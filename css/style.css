@@ -288,7 +288,7 @@ body{
 }
 
 .skill_content{
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     text-align: center;
 }
 
@@ -350,4 +350,72 @@ body{
     margin-top: 4rem;
     color: var(--light-white);
     font-size: var(--font-paragraph);
+}
+
+.social_icons{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Hamburger Menu */
+
+.hamburger_menu{
+    position: relative;
+}
+
+.menu{
+    width: 3rem;
+    height: .4rem;
+    color: var(--color-black);
+    background-color: var(--color-black);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 9px;
+    }
+
+    .logo_color{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width:645px){
+    html{
+        font-size: 8px;
+    }
+    .col-1-of-4{
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width:576px){
+    .col-2-of-5{
+        width: 100%;
+    }
+
+    .col-3-of-5{
+        width: 100%;
+    }
+    .section_content{
+        padding: 10rem 1.5rem 0 1.5rem;
+    }
+
+    .content_section_color{
+        min-height: 42rem;
+    }
+
+    .container_main{
+        min-height: 40rem;
+    }
+}
+
+@media (max-width:360px){
+    .col-1-of-4{
+        width: 100%;
+    }
 }
